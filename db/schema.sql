@@ -85,3 +85,11 @@ cellphoneNo = '01011113333',
 email = 'user2@gmail.com';
 
 SELECT * FROM `member`;
+
+ALTER TABLE article ADD COLUMN memberId INT(10) UNSIGNED NOT NULL AFTER `updateDate`;
+
+UPDATE article
+SET memberId = 2
+WHERE memberId = 0;
+
+SELECT * FROM article;
