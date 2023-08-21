@@ -14,4 +14,7 @@ public class Article {
 	public int memberId;
 	public String title;
 	public String body;
+	
+	private String writerName;
+	private boolean Exta__actorCanDelete;
 }
