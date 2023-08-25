@@ -6,6 +6,7 @@
 <section class="mt-5">
 <div class="container mx-auto px-3">
 <form action="../article/doModify" method="POST" class="table-box-type-1">
+<input type="hidden" name="id" value="${article.id }"/>
 <table>
 <colgroup>
 <col width="200"/>
@@ -17,11 +18,11 @@
 </tr>
 <tr>
 <th>작성날짜</th>
-<td>${article.regDate}</td>
+<td>${article.regDateForPrint}</td>
 </tr>
 <tr>
 <th>수정날짜</th>
-<td>${article.updateDate}</td>
+<td>${article.updateDateForPrint}</td>
 </tr>
 <tr>
 <th>작성자</th>

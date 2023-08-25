@@ -59,23 +59,22 @@ public class UsrMemberController {
 	@RequestMapping("/usr/member/doLogin")
 	@ResponseBody
 	public String doLogin(HttpServletRequest req, String loginId, String loginPw) {
+		
+		
 		Rq rq = (Rq)req.getAttribute("rq");
 		
-		boolean isLogined = false;
 		
 		if(rq.isLogined()) {
 			return Ut.jsHistoryBack("이미 로그인 상태입니다.");
 		}
 		
-		if(isLogined) {
-			return Ut.jsHistoryBack("이미 로그인 되어있습니다.");
-		}
 		if(Ut.isEmpty(loginId)) {
 			return Ut.jsHistoryBack("아이디를 입력하세요.");
 		}
 		if(Ut.isEmpty(loginPw)) {
 			return Ut.jsHistoryBack("비밀번호를 입력하세요.");
 		}
+		
 		
 		Member member = memberService.getMemberByLoginId(loginId);
 		

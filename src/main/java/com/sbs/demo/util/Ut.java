@@ -23,7 +23,7 @@ public class Ut {
 				<script>
 				const msg = '%s'.trim();
 
-				if( msg.length() > 0 ) {
+				if( msg.length > 0 ) {
 				alert(msg);
 				}
 
@@ -43,7 +43,7 @@ public class Ut {
 		return Ut.f("""
 					<script>
 					const msg = '%s'.trim();
-					if (msg.length() > 0 ) {
+					if (msg.length > 0 ) {
 					alert(msg);
 					}
 					location.replace('%s');
