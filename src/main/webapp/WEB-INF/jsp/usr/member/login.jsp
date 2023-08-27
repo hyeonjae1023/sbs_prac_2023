@@ -15,20 +15,20 @@
 <tr>
 <th>Id</th>
 <td>
-<input type="text" name="loginId" class="w-96" placeholder="Id"/>
+<input type="text" name="loginId" class="input input-bordered w-96 max-w-xs" placeholder="Id"/>
 </td>
 </tr>
 <tr>
 <th>Password</th>
 <td>
-<input type="text" name="loginPw" class="w-96" placeholder="password"/>
+<input type="text" name="loginPw" class="input input-bordered w-96 max-w-xs" placeholder="password"/>
 </td>
 </tr>
 <tr>
 <th>Log in</th>
 <td>
-<input type="submit" class="mx-3" value="로그인"/>
-<button type="button" class="mx-3" onclick="history.back();">뒤로가기</button>
+<input type="submit" class="btn btn-primary" value="로그인"/>
+<button type="button" class="btn btn-outline btn-primary" onclick="history.back();">뒤로가기</button>
 </td>
 </tr>
 </tbody>

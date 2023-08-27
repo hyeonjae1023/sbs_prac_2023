@@ -15,7 +15,6 @@ import com.sbs.demo.vo.ResultData;
 import com.sbs.demo.vo.Rq;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class UsrArticleController {
@@ -41,6 +40,11 @@ public class UsrArticleController {
 		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
 		
 		return  ResultData.newData(writeArticleRd, article);
+	}
+	
+	@RequestMapping("usr/article/write")
+	public String showWrite() {
+		return "usr/article/write";
 	}
 	
 	@RequestMapping("/usr/article/list")
